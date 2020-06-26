@@ -1,0 +1,40 @@
+#toppage{
+	background-size: cover;
+	background-image: url(https://lh3.googleusercontent.com/proxy/O2xCcsLTfroiFkp97CyZoabfImf4kaZaSbuOymVOCrz7kG-9O-QLo4rptJyZnFj5k5TgV6ue4O9mFnCWgH9PoCK9swOgtyg);
+	height: 50rem;
+	width: 100%;
+}
+
+#nav{
+	background-color: black;
+	display: flex;
+	align-items: center;
+	width: 80%;
+	height: 3rem;
+	/*if using side navbar, make height auto at certain width*/
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: auto;
+	font-weight: bold;
+}
+
+#logo{
+	width: 100%;
+	height: auto;
+}
+
+.navitems{
+	margin-right: 5rem;
+}
+
+.flexrow{
+	display: flex;
+	flex-direction: row;
+}
+
+.flexcol{
+	display: flex;
+	flex-direction: column;
+}
+
+
