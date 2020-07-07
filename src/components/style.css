@@ -82,13 +82,12 @@ html, body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 4rem;
-    margin-bottom: 4rem;
+	margin-bottom: 4rem;
 }
 
-#mappage > iframe {
+#map{
 	width: 80%;
-	height: 100%;
+	height: 90%;
 }
 
 #articlepage{ 
@@ -111,14 +110,16 @@ html, body{
 	background-repeat: no-repeat;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 #contactpage > h{
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 3rem;
 	color: green;
 	margin-top: 4rem;
 	margin-bottom: 4rem;
+	text-align: center;
 }
 
 #contactform{

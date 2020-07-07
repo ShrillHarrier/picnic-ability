@@ -4,7 +4,7 @@ import {Card} from 'react-bootstrap';
 import './style.css'
 
 function Main(){
-	const w = window.innerWidth;
+	var w = window.innerWidth;
 	var flextype;
 	console.log(w)
 

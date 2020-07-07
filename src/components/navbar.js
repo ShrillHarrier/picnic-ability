@@ -12,7 +12,12 @@ function Main(){
     			<Nav className="ml-auto" id="navlinks">
       				<Nav.Link href="#aboutpage">About</Nav.Link>
       				<Nav.Link href="#mappage">Map</Nav.Link>
-      				<Nav.Link href="#articlepage">Articles</Nav.Link>
+      				<NavDropdown href="#articlepage" title="Articles" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#articlepage">Preview</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="">Itineraries</NavDropdown.Item>
+                <NavDropdown.Item href="">Blog</NavDropdown.Item>
+              </NavDropdown>
       				{/*<Nav.Link href="">Products</Nav.Link>*/}
       				<Nav.Link href="#contactpage">Contact</Nav.Link>
       			</Nav>

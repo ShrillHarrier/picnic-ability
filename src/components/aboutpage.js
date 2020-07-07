@@ -5,7 +5,7 @@ import './style.css'
 function Main(){
 	return(
 		<div id="aboutpage" className="flexcol">
-				<h> About Us </h>	
+				<h>Our Mission</h>	
 		</div>
 	)
 }
