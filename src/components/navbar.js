@@ -5,21 +5,19 @@ import './style.css'
 
 function Main(){
 	return(
-			<Navbar collapseOnSelect id="nav" expand="lg" sticky="top">
-			  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-			  <Navbar.Collapse className="d-flex justify-content-around" id="responsive-navbar-nav">
-			      <NavDropdown title="Home" id="collasible-nav-dropdown">
-			      </NavDropdown>
-			      <NavDropdown title="Articles" id="collasible-nav-dropdown">
-			      </NavDropdown>
-			      <NavDropdown title="Trips" id="collasible-nav-dropdown">
-			      </NavDropdown>
-			      <NavDropdown title="Tried-True Products" id="collasible-nav-dropdown">
-			      </NavDropdown>
-			      <NavDropdown title="About" id="collasible-nav-dropdown">
-			      </NavDropdown>
-			  </Navbar.Collapse>
-			</Navbar>
+		<Navbar collapseOnSelect expand="lg" id = "nav" fixed="top">
+  			<Navbar.Brand id = "navlogo" href="#homepage">Picnic Ability</Navbar.Brand>
+  			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  			<Navbar.Collapse id="navlinks">
+    			<Nav className="ml-auto" id="navlinks">
+      				<Nav.Link href="#aboutpage">About</Nav.Link>
+      				<Nav.Link href="#mappage">Map</Nav.Link>
+      				<Nav.Link href="#articlepage">Articles</Nav.Link>
+      				{/*<Nav.Link href="">Products</Nav.Link>*/}
+      				<Nav.Link href="#contactpage">Contact</Nav.Link>
+      			</Nav>
+  			</Navbar.Collapse>
+		</Navbar>
 	)
 }
 

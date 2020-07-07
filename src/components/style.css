@@ -1,30 +1,18 @@
-#toppage{
-	background-size: cover;
-	background-image: url(https://lh3.googleusercontent.com/proxy/O2xCcsLTfroiFkp97CyZoabfImf4kaZaSbuOymVOCrz7kG-9O-QLo4rptJyZnFj5k5TgV6ue4O9mFnCWgH9PoCK9swOgtyg);
-	height: 50rem;
+html, body{
+	scroll-behavior: smooth;
+	width: 100%;
+	height: 100%;
+}
+
+.fullpage{
 	width: 100%;
 }
 
-#nav{
-	background-color: black;
+.halfpage{
+	width: 50%;
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	width: 80%;
-	height: 3rem;
-	/*if using side navbar, make height auto at certain width*/
-	margin-left: 5%;
-	margin-right: 5%;
-	font-size: auto;
-	font-weight: bold;
-}
-
-#logo{
-	width: 100%;
-	height: auto;
-}
-
-.navitems{
-	margin-right: 5rem;
 }
 
 .flexrow{
@@ -36,5 +24,172 @@
 	display: flex;
 	flex-direction: column;
 }
+
+#homepage{
+	height: 38rem;
+	width: 100%;
+	background-size: cover;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 0%), url("../img/Hotel.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#homeheader > h{
+	font-size: 4rem;
+	font-weight: bold;
+	color: white;
+	text-shadow: black 2px 2px 5px;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	animation-name: fade;
+  	animation-duration: 3s;
+}
+
+#aboutpage{
+	height: 38rem;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, white, lightgrey);
+    margin-bottom: 4rem;
+}
+
+#aboutpage > h{
+	color: green;
+	font-weight: 500;
+	font-size: 3rem;
+	margin-bottom: 4rem;
+	margin-top: 4rem;
+	animation-name: slide;
+  	animation-duration: 2s;
+}
+
+#mappage{
+	height: 34rem;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#mappage > iframe {
+	width: 80%;
+	height: 100%;
+}
+
+#articlepage{ 
+	height: 38rem;
+	width: 100%;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 0%), url("../img/Beach.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#contactpage{
+	height: 38rem;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+}
+
+#contactpage > h{
+	font-weight: bold;
+	font-size: 3rem;
+	color: green;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+#contactform{
+	width: 65%;
+	height: auto;
+	margin-bottom: 4rem;
+}
+
+.cards{
+	width: 30%;
+	height: 70%;
+	color: green;
+	background-color: silver;
+	text-align: center;
+	border-style: solid;
+  	border-color: black;
+  	border-radius: 4px;
+  	box-shadow: black 2px 2px 3px;
+  	opacity: 0.8;
+  	cursor: pointer;
+}
+
+.cards:hover{
+	transform: scale(1.1);
+	opacity: 1;
+}
+
+.cards > h{
+	font-weight: bold;
+	font-size: 2rem;
+	font-family: "times new roman"
+}
+
+#footerpage{
+	height: 6rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	background-color: lightgrey;
+	text-align: center;
+}
+
+#nav{
+	background-color: white;
+	color: green;
+}
+
+#nav > #navlogo{
+	color: green;
+	font-weight: bold;
+	font-family: "Montserrat";
+	font-size: 1.8rem;
+}
+
+#nav > #navlinks{
+	font-weight: 630;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 760px){
+	#homeheader > h{
+		font-size: 3rem;
+	}
+	.cards{
+		width: 70%;
+		margin-top: 1rem;
+	}	
+}
+
+
 
 
