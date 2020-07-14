@@ -10,7 +10,7 @@ function Main(){
   			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
   			<Navbar.Collapse id="navlinks">
     			<Nav className="ml-auto" id="navlinks">
-      				<Nav.Link className="navspace" href="">Travel Plans</Nav.Link>
+      				<Nav.Link className="navspace" href="#travelpage">Travel Plans</Nav.Link>
       				<Nav.Link className="navspace" href="">Blog</Nav.Link>
               <Nav.Link className="navspace" href="">Contact</Nav.Link>
       			</Nav>
