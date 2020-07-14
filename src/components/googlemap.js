@@ -22,7 +22,6 @@ class GoogleMap extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-
         </GoogleMapReact>
       </div>
     );

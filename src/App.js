@@ -6,6 +6,7 @@ import Map from './components/mappage';
 import Article from './components/articlepage';
 import ContactPage from './components/contactpage';
 import Footer from './components/footer';
+import Subscribe from './components/subscribepage'
 
 class App extends React.Component {
   render(){
@@ -17,6 +18,10 @@ class App extends React.Component {
 
 	    	<section>
 	    		<HomePage/>
+	    	</section>
+
+	    	<section>
+	    		<Subscribe/>
 	    	</section>
 
 	    	<section>

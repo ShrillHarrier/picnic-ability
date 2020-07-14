@@ -6,20 +6,13 @@ import './style.css'
 function Main(){
 	return(
 		<Navbar collapseOnSelect expand="lg" id = "nav" fixed="top">
-  			<Navbar.Brand id = "navlogo" href="#homepage">Picnic Ability</Navbar.Brand>
+  			<Navbar.Brand id = "navlogo" href="#homepage">PicnicAbility</Navbar.Brand>
   			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
   			<Navbar.Collapse id="navlinks">
     			<Nav className="ml-auto" id="navlinks">
-      				<Nav.Link href="#aboutpage">About</Nav.Link>
-      				<Nav.Link href="#mappage">Map</Nav.Link>
-      				<NavDropdown href="#articlepage" title="Articles" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#articlepage">Preview</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="">Itineraries</NavDropdown.Item>
-                <NavDropdown.Item href="">Blog</NavDropdown.Item>
-              </NavDropdown>
-      				{/*<Nav.Link href="">Products</Nav.Link>*/}
-      				<Nav.Link href="#contactpage">Contact</Nav.Link>
+      				<Nav.Link className="navspace" href="">Travel Plans</Nav.Link>
+      				<Nav.Link className="navspace" href="">Blog</Nav.Link>
+              <Nav.Link className="navspace" href="">Contact</Nav.Link>
       			</Nav>
   			</Navbar.Collapse>
 		</Navbar>
