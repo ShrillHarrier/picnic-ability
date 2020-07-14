@@ -23,7 +23,7 @@ function Main(){
 				  </Form.Group>
 	      			
 				  <Form.Group controlId="formBasicEmail">
-				   <Form.Label>Your Email</Form.Label>
+				   <Form.Label>Email</Form.Label>
 				    <Form.Control type="email" placeholder="Name@example.com" />
 				  </Form.Group>
 

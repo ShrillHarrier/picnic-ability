@@ -1,24 +1,34 @@
-import React, {Component} from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button} from 'react-bootstrap';
 import './style.css';
 import './custombutton.css';
 
-function Main(){
-
-	function scrolltosub() {
-	  window.scrollBy(0, 400);
+class HomePage extends React.Component{
+	constructor() {
+	    super();
+	    this.state = {
+	    	clicks: 0
+	      }
 	}
 
-	return(
-		<div id="homepage">
-      		<div id="hometext" className="flexcol">
-      			<h>What is PicnicAbility?</h>
-      			<p>PicnicAbility is a site where we review things. Some other stuff will go here. Sample sample sample. </p>
-      			<Button onClick={scrolltosub} id="homebutton" active>Learn More &#8594;</Button>
-      		</div>
-    	</div>
-	)
+	scrolltosub = () => {
+	  window.scrollBy(0, 400);
+	  this.setState({clicks: this.state.clicks + 1});
+	  {/*console.log(this.state.clicks);*/}
+	}
+
+	render(){
+		return(
+			<div id="homepage">
+	      		<div id="hometext" className="flexcol">
+	      			<h>What is PicnicAbility?</h>
+	      			<p>PicnicAbility is a site where we review things. Some other stuff will go here. Sample sample sample. </p>
+	      			<Button onClick={this.scrolltosub} id="homebutton" active>Learn More &#8594;</Button>
+	      		</div>
+	    	</div>
+		)
+	}
 }
 
-export default Main;
+export default HomePage;

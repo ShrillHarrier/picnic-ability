@@ -9,6 +9,13 @@ import Footer from './components/footer';
 import Subscribe from './components/subscribepage'
 
 class App extends React.Component {
+	constructor() {
+	    super();
+	    this.state = {
+	    	value: 0
+	      }
+	}
+
   render(){
     return(
     	<body>
