@@ -9,7 +9,20 @@ class Subscribe extends Component{
 	constructor() {
 	    super();
 	    this.state = {
+	    	email: "",
+	    	country: ""
 	      }
+	}
+
+	submit = () => {
+		fetch("http://192.168.1.17:3001/subscribe", {
+			method: 'post',
+			header: {'Content-Type': 'application/json'},
+			body: JSON.stringify({
+				email: this.state.email,
+				country: this.state.country
+			})
+		})
 	}
 
 	render() {
@@ -34,7 +47,7 @@ class Subscribe extends Component{
 					    <Form.Control type="email" placeholder="Name@example.com" />
 					  </Form.Group>
 
-					  <Button id="subbutton">Subscribe</Button>
+					  <Button onClick = {this.submit} id="subbutton">Subscribe</Button>
 					</Form>
 	      		</div>
 	    	</div>
