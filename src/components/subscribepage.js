@@ -14,15 +14,26 @@ class Subscribe extends Component{
 	      }
 	}
 
+	countryChange = (event) => {
+		this.setState({country: event.target.value});
+		console.log(this.state.country);
+	}
+
+	emailChange = (event) => {
+		this.setState({email: event.target.value});
+		console.log(this.state.email);
+	}
+
 	submit = () => {
 		fetch("http://192.168.1.17:3001/subscribe", {
-			method: 'post',
-			header: {'Content-Type': 'application/json'},
+			method: 'POST',
+			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
-				email: this.state.email,
-				country: this.state.country
+				"email": this.state.email,
+				"country": this.state.country
 			})
 		})
+		.then(response => response.json())
 	}
 
 	render() {
@@ -39,12 +50,12 @@ class Subscribe extends Component{
 	      			  {/*use google api for places*/}
 	      			  <Form.Group>
 	      			   <Form.Label>Country</Form.Label>
-					    <Form.Control type="" placeholder="Canada" />
+					    <Form.Control onChange={this.countryChange} type="" placeholder="Canada" />
 					  </Form.Group>
 		      			
 					  <Form.Group controlId="formBasicEmail">
 					   <Form.Label>Email</Form.Label>
-					    <Form.Control type="email" placeholder="Name@example.com" />
+					    <Form.Control onChange={this.emailChange} type="email" placeholder="Name@example.com" />
 					  </Form.Group>
 
 					  <Button onClick = {this.submit} id="subbutton">Subscribe</Button>

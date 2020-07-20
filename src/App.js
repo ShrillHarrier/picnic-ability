@@ -13,9 +13,9 @@ class App extends React.Component {
 	}
 
 	componentDidMount(){
-		fetch("http://localhost:3001")
+		fetch("http://192.168.1.17:3001/")
 		.then(response => response.json())
-		.then(console.log("works"))
+		.then(data => console.log(data))
 	}
 
   render(){
