@@ -348,6 +348,8 @@ html, body{
 
 #blogbutton{
 	border-radius: 2px;
+	background-color: green;
+	border-color: green;
 }
 
 #footerpage{

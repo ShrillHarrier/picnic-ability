@@ -33,7 +33,7 @@ class Subscribe extends Component{
 				"country": this.state.country
 			})
 		})
-		.then(response => response.json())
+		.then(response => console.log(response.json()))
 	}
 
 	render() {

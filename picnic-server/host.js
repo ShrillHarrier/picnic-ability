@@ -3,6 +3,7 @@ const express = require('express');
 const knex = require('knex');
 const cors = require('cors');
 const bp = require('body-parser');
+process.env.TZ = "US/Hawaii"
 
 const app = express();
 app.use(cors());
@@ -23,12 +24,16 @@ app.get('/blogs', (req, res) => {
 })
 
 app.post('/subscribe', (req, res) => {
-	console.log(req.body);
-	db('subscribers').insert([{email: req.body.email, country: req.body.country}])
-	.then(res.send("subscribed"));
-	db.select('*').from('subscribers').then(data => {
-	console.log(data)});
-	console.log("sub sent");
+	if(req.body.email != "" && req.body.country != ""){
+		db('subscribers').insert([{email: req.body.email, country: req.body.country}])
+		.then(res.send("You are now subscribed."));
+		db.select('*').from('subscribers').then(data => {
+		console.log(data)});
+		console.log("sub sent");
+	}
+	else{
+		res.send("Missing some information.")
+	}
 })
 
 app.listen(3001, "192.168.1.17", () => {
@@ -41,9 +46,8 @@ const db = knex({
 		host: "localhost",
 		user: "postgres",
 		password: "1357",
-		database: "Test"
+		database: "Test",
 	}
-
 })
 
 
