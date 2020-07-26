@@ -11,7 +11,7 @@ function Main(){
   			<Navbar.Collapse id="navlinks">
     			<Nav className="ml-auto" id="navlinks">
       				<Nav.Link className="navspace" href="#travelpage">Travel Plans</Nav.Link>
-      				<Nav.Link className="navspace" href="">Blog</Nav.Link>
+      				<Nav.Link className="navspace" href="#articlepage">Blog</Nav.Link>
               <Nav.Link className="navspace" href="">Contact</Nav.Link>
       			</Nav>
   			</Navbar.Collapse>

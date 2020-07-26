@@ -4,6 +4,7 @@ import HomePage from './components/homepage';
 import Footer from './components/footer';
 import Subscribe from './components/subscribepage'
 import TravelPlans from './components/travelplans'
+import Articles from './components/articles'
 
 class App extends React.Component {
 	constructor() {
@@ -12,10 +13,9 @@ class App extends React.Component {
 	      }
 	}
 
-	componentDidMount(){
-		fetch("http://192.168.1.17:3001/")
-		.then(response => response.json())
-		.then(data => console.log(data))
+	async componentDidMount(){
+		const response = await fetch("http://192.168.1.17:3001/");
+		const data = await response.json();
 	}
 
   render(){
@@ -35,6 +35,10 @@ class App extends React.Component {
 
 	    	<section>
 	    		<TravelPlans/>
+	    	</section>
+
+	    	<section>
+	    		<Articles/>
 	    	</section>
 
 	    	<footer>

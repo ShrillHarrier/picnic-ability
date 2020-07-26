@@ -14,6 +14,14 @@ app.get('/', (req, res) => {
 	res.send("working");
 })
 
+app.get('/blogs', (req, res) => {
+	db.select('*').from('blogs')
+	.then(data => {
+		res.json(data)
+	})
+	console.log("blogs sent");
+})
+
 app.post('/subscribe', (req, res) => {
 	console.log(req.body);
 	db('subscribers').insert([{email: req.body.email, country: req.body.country}])
