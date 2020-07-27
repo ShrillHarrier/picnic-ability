@@ -6,8 +6,8 @@ import 'react-google-places-autocomplete/dist/index.min.css';
 import './style.css';
 
 class Subscribe extends Component{
-	constructor() {
-	    super();
+	constructor(props) {
+	    super(props);
 	    this.state = {
 	    	email: "",
 	    	country: ""
@@ -47,15 +47,15 @@ class Subscribe extends Component{
 	      			<h>Info &#8595;</h>
 	      			<Form className="flexrow" id="sub">
 
+	      			<Form.Group controlId="formBasicEmail">
+					   <Form.Label>Email</Form.Label>
+					    <Form.Control onChange={this.emailChange} type="email" placeholder="Name@example.com" />
+					  </Form.Group>
+
 	      			  {/*use google api for places*/}
 	      			  <Form.Group>
 	      			   <Form.Label>Country</Form.Label>
 					    <Form.Control onChange={this.countryChange} type="" placeholder="Canada" />
-					  </Form.Group>
-		      			
-					  <Form.Group controlId="formBasicEmail">
-					   <Form.Label>Email</Form.Label>
-					    <Form.Control onChange={this.emailChange} type="email" placeholder="Name@example.com" />
 					  </Form.Group>
 
 					  <Button onClick = {this.submit} id="subbutton">Subscribe</Button>

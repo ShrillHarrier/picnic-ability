@@ -12,7 +12,15 @@ app.use(bp.urlencoded({extended: false}));
 app.use(bp.json());
 
 app.get('/', (req, res) => {
-	res.send("working");
+	res.send("Working.");
+})
+
+app.get('/travelplans', (req, res) => {
+	db.select('*').from('travelplans')
+	.then(data => {
+		res.json(data)
+	})
+	console.log("plans sent");
 })
 
 app.get('/blogs', (req, res) => {

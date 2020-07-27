@@ -299,59 +299,6 @@ html, body{
 	align-items: center;
 }
 
-#blogdiv{
-	width: 30%;
-	height: 20rem;
-	background-color: silver;
-	margin-right: 0.5rem;
-	margin-left: 0.5rem;
-	margin-top: 4rem;
-	border-radius: 3px;
-	box-shadow: 2px 2px 3px black;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	background-size: cover;
-	background-blend-mode: none;
-}
-
-#blogdiv:hover{
-	transform: scale(1.05);
-}
-
-#blogdiv > h{
-	font-weight: bold;
-	font-size: 1.3rem;
-	position: relative;
-	background-color: lightgrey;
-	border-radius: 8px;
-	padding: 0.5rem;
-	margin: 0.5rem;
-}
-
-#blogdiv > h1{
-	font-weight: 550;
-	font-size: 1.1rem;
-	position: relative;
-	background-color: lightgrey;
-	border-radius: 8px;
-	padding: 0.5rem;
-}
-
-#blogdiv > img{
-	height: 100%;
-	width: 100%;
-	border-radius: 3px;
-	filter: opacity(60%);
-}
-
-#blogbutton{
-	border-radius: 2px;
-	background-color: green;
-	border-color: green;
-}
-
 #footerpage{
 	height: 6rem;
 	width: 100%;

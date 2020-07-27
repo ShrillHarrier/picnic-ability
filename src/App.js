@@ -7,8 +7,8 @@ import TravelPlans from './components/travelplans'
 import Articles from './components/articles'
 
 class App extends React.Component {
-	constructor() {
-	    super();
+	constructor(props) {
+	    super(props);
 	    this.state = {
 	      }
 	}
