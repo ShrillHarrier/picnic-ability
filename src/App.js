@@ -14,7 +14,7 @@ class App extends React.Component {
 	}
 
 	async componentDidMount(){
-		const response = await fetch("http://192.168.1.17:3001/");
+		const response = await fetch("192.168.1.17:3001/");
 		const data = await response.json();
 	}
 

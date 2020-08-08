@@ -3,7 +3,6 @@ const express = require('express');
 const knex = require('knex');
 const cors = require('cors');
 const bp = require('body-parser');
-process.env.TZ = "US/Hawaii"
 
 const app = express();
 app.use(cors());
@@ -44,7 +43,7 @@ app.post('/subscribe', (req, res) => {
 	}
 })
 
-app.listen(3001, "192.168.1.17", () => {
+app.listen("a2plcpnl0446.prod.iad2.secureserver.net", () => {
 	console.log("Connected to the port 3001.");
 })
 

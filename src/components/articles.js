@@ -15,12 +15,12 @@ class Articles extends Component{
 	}
 
 	async componentDidMount (){
-	    const response1 = await fetch("http://192.168.1.17:3001/travelplans")
+	    const response1 = await fetch("http://192.168.1.175:3001/travelplans")
 		const plandata = await response1.json()
 
 		this.setState({travelplans: plandata});
 
-		const response2 = await fetch("http://192.168.1.17:3001/blogs")
+		const response2 = await fetch("http://192.168.1.175:3001/blogs")
 		const blogdata = await response2.json()
 
 		this.setState({articles: blogdata});

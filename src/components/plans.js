@@ -8,10 +8,10 @@ class Plans extends Component{
 
 	putlocation = () => {
 		if(this.props.province != null){
-				return <h1>{this.props.province + ", " + this.props.country}</h1>
+				return <h1>{this.props.province + ", " + this.props.country}</h1>;
 			}
 		else{
-				return <h1>{this.props.country}</h1>
+				return <h1>{this.props.country}</h1>;
 			}
 	}
 

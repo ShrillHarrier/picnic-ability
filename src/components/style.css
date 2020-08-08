@@ -134,19 +134,40 @@ html, body{
     text-align: center;
 }
 
+#travelbutton{
+	background-color: black;
+	border-color: black;
+}
+
 #map{
 	width: 100%;
 	height: 100%;
 }
 
 #travelinfo{
+	color: white;
 	width: auto;
-	background-color: white;
+	height: auto;
+	background-color: green;
 	font-size: 1.5rem;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	margin-right: 1rem;
 	margin-left: 1rem;
+}
+
+#travel{
+	height: 100%;
+	display: flex;
+	text-align: center;
+	border-right: 1px solid;
+	border-color: black;
+}
+
+#travel > h, #blog > h {
+	font-size: 1.7rem;
+	font-weight: bold;
+	text-align: center;
 }
 
 #travelmap{
@@ -159,13 +180,19 @@ html, body{
 }
 
 #travelsubmit{
+	color: white;
 	width: auto;
-	background-color: white;
-	font-size: 1.3rem;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	height: auto;
+	background-color: green;
+	font-size: 1.1rem;
+	padding: 1rem;
 	margin-right: 1rem;
 	margin-left: 1rem;
+}
+
+#travelsubmit > p > a{
+	color: darkblue;
+	font-weight: bold;
 }
 
 #aboutpage{
@@ -274,20 +301,6 @@ html, body{
 	flex-direction: row;
 }
 
-#travel{
-	height: 100%;
-	display: flex;
-	text-align: center;
-	border-right: 1px solid;
-	border-color: black;
-}
-
-#travel > h, #blog > h {
-	font-size: 1.7rem;
-	font-weight: bold;
-	text-align: center;
-}
-
 #blog{
 	height: 100%;
 	display: flex;
@@ -300,7 +313,7 @@ html, body{
 }
 
 #footerpage{
-	height: 6rem;
+	height: auto;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -308,6 +321,7 @@ html, body{
 	color: black;
 	background-color: lightgrey;
 	text-align: center;
+	padding-top: 2rem;
 }
 
 #nav{
@@ -317,8 +331,8 @@ html, body{
 
 #navlogo{
 	color: green;
-	font-weight: bold;
-	font-family: "Montserrat";
+	font-weight: 750;
+	font-family: "Segoe UI", "Montserrat";
 	font-size: 2.1rem;
 }
 

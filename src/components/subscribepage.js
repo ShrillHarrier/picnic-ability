@@ -25,7 +25,7 @@ class Subscribe extends Component{
 	}
 
 	submit = () => {
-		fetch("http://192.168.1.17:3001/subscribe", {
+		fetch("http://192.168.1.175:3001/subscribe", {
 			method: 'POST',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
