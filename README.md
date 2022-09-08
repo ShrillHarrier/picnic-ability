@@ -1,5 +1,7 @@
 Picnic Ability is meant to serve as a webpage where people with disablilities can review and write itineraries for travel destinations. A blog section is included where articles about travel destinations can be added. 
 
+##
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
